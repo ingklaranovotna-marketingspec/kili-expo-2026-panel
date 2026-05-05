@@ -37,7 +37,7 @@ export default function SupplierDetail({ supplier, onClose }: Props) {
               <div className="detail-left" style={{ borderColor: supplier.color }}>
                 <div className="detail-logo-box" style={{ borderColor: supplier.color }}>
                   <img
-                    src={supplier.logo}
+                    src={import.meta.env.BASE_URL + supplier.logo.replace(/^\//, '')}
                     alt={supplier.name}
                     className="detail-logo-img"
                     onError={(e) => {

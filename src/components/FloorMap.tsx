@@ -164,7 +164,7 @@ export default function FloorMap({ suppliers, onSelect }: Props) {
               {/* Logo */}
               {s.logo ? (
                 <image
-                  href={s.logo}
+                  href={import.meta.env.BASE_URL + s.logo.replace(/^\//, '')}
                   x={s.mapX + pad}
                   y={s.mapY + pad}
                   width={logoW}
