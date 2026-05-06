@@ -58,7 +58,7 @@ export default function VideoIntro() {
                 </button>
                 <video
                   ref={videoRef}
-                  src="/expo-se-zvukem.mp4"
+                  src={import.meta.env.BASE_URL + "expo_pozyvanka.mp4"}
                   controls
                   className="video-player"
                 />
